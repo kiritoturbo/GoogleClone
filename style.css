@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    box-sizing: border-box;
+}
+
+html{
+    position: relative;
+}
+.flex{
+    display: flex;
+    align-items: center;
+  }
+
+.icon{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 300;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu::after{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: firebrick;
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+    display: none;
+}
+
+.menu:hover .menu::after{
+    display: block;
+}
+
+.inputNhap{
+    outline: none;
+    /* background: forestgreen; */
+    position: absolute;
+    padding: 10px 20px 10px 10px;
+    min-width: 400px;
+    left: 40px;
+    top: 5px;
+    
+}
+
+.imageAccout{
+    margin-right: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.linkDes{
+    margin-left: 15px;
+    color: #3c4043;
+}
+
+.linkDes:hover{
+    text-decoration: underline;
+}
+
+
+/* content  */
+.content{
+    
+}
+
+
+.imageGoogle{
+    display: flex;
+}
+
+.imgLogo{
+    margin: 0 auto;
+    margin-top: 92px;
+    margin-bottom: 20px;
+
+}
+
+.search{
+    display:flex;
+    margin: 0 auto;
+    width: 582px;
+    height: 46px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* .inputSearch{
+    position: absolute;
+    background-color: #1a0dab;
+    left: 20px;
+    min-width: 500px;
+} */
+
+.search:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+    cursor: pointer;
+}
+
+.buttonSearch{
+    display: flex;
+    margin-right: 14px;
+}
+
+.iconSearch{
+    padding: 5px 8px 0 14px;
+}
+
+.footerSearch{
+    display: flex;
+    justify-content: center;
+    height: 88px;
+    margin-top: 18px;
+}
+
+.buttonCheck{
+    padding: 0px 8px ;
+}
+
+.btn:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.btn-Search{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.footerLanguage{
+    justify-content: center;
+    
+}
+
+.label{
+    color: #4d5156;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+}
+
+.Lang{
+    color: #1a0dab;
+    margin-left: 8px;
+}
+
+.Lang:hover{
+    text-decoration: underline;
+}
+
+
+/* footer  Main */
+
+.footerMain{
+    width: 100vw;
+    background-color: #F2F2F2;
+    position: absolute;
+    bottom: 0;
+}
+.languageFooter{
+    width: 100vw;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    border-top:1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+}
+
+.desLink:hover,.languageFooter:hover{
+    text-decoration: underline;
+}
+
+.descriptionFooter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.desLink{
+    padding: 15px;
+    display: block;
+    color: #70757a;
+}
+
+
+/* tooltip  */
+.buttonCheck {
+    position: relative;
+    
+}
+  
+.tooltiptext {
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 100;
+    visibility: hidden;
+    min-width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    left: -38px;
+    top: 36px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tooltiptext::after{
+    content: '';
+    position: absolute;
+    border-bottom-left-radius: 1px solid #9f1d1d;
+    top: -15px;
+    left: 50px;
+    border:10px solid transparent;
+    border-right-color:transparent ;
+    border-bottom-color: black;
+    border-left-color: transparent;
+    display: block;
+    width: 0px;
+}
+
+.buttonCheck:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* responsive  */
+
+@media screen and (max-width: 556px) {
+    .iconSearch,.buttonCheck{
+        font-size: 13px;
+    }
+    .imgLogo{
+        width:200px ;
+    }
+    .search{
+        width: 300px;
+    }
+    .inputNhap{
+        width: 30px;
+    }
+    .btn-Search{
+        font-size: 11px;
+    }
+    .footerLanguage{
+        font-size: 11px;
+    }
+
+    .descriptionFooter{
+        display: none;
+        
+    }
+}

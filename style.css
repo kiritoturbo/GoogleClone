@@ -273,6 +273,10 @@ a{
 /* responsive  */
 
 @media screen and (max-width: 556px) {
+    html{
+        width: 100vw;
+        height: 100vh;
+    }
     .iconSearch,.buttonCheck{
         font-size: 13px;
     }
@@ -282,8 +286,12 @@ a{
     .search{
         width: 300px;
     }
-    .inputNhap{
+    .inputSearch{
         width: 30px;
+        display: inline-block;
+    }
+    .inputNhap{
+        padding:6px 5px;
     }
     .btn-Search{
         font-size: 11px;

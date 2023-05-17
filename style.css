@@ -264,8 +264,8 @@ a{
 
 @media screen and (max-width: 556px) {
     html{
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
     }
     .iconSearch,.buttonCheck{
         font-size: 13px;
